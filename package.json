@@ -1,0 +1,33 @@
+{
+  "name": "entity-project-structure",
+  "version": "1.0.0",
+  "description": "Node.js, Express and Sequelize project focused on entities instead of roles.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "prettier-options": "prettier --single-quote --trailing-comma es5 --no-semi --print-width 120 ",
+    "prettier": "npm run prettier-options -- --write \"./**/*.{js,jsx,json,css}\"",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "check-formatting": "npm run lint && npm run prettier-options -- --list-different \"./**/*.{js,jsx,json,css}\""
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "entity",
+    "sequelize",
+    "express",
+    "structure"
+  ],
+  "author": "Jose C Quintas Jr - juniorquintas@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "eslint": "^5.1.0",
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "prettier": "^1.13.7",
+    "sequelize": "^4.38.0"
+  }
+}
